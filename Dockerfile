@@ -10,7 +10,7 @@ WORKDIR /app
 COPY requirements.txt .
 COPY app/ app/
 COPY gmailtogravatar.py .
-COPY .env .
+# COPY .env .
 
 # Install dependencies globally (inside container)
 RUN pip install --no-cache-dir -r requirements.txt
